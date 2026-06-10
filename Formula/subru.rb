@@ -1,4 +1,4 @@
-class Sabru < Formula
+class Subru < Formula
   desc "Rust CLI for detecting potential subdomain takeover exposure"
   homepage "https://github.com/sherpatch/subru"
   url "https://github.com/sherpatch/subru.git",
@@ -11,11 +11,9 @@ class Sabru < Formula
 
   def install
     system "cargo", "install", *std_cargo_args
-    bin.install_symlink "subru" => "sabru"
   end
 
   test do
     assert_match version.to_s, shell_output("#{bin}/subru version")
-    assert_match version.to_s, shell_output("#{bin}/sabru version")
   end
 end
