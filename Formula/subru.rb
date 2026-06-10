@@ -3,7 +3,7 @@ class Subru < Formula
   homepage "https://github.com/sherpatch/subru"
   url "https://github.com/sherpatch/subru.git",
       tag:      "v0.1.3",
-      revision: "130826ab5906276ec2cb4982a8269eabc16e5a63"
+      revision: "005a2bfc2ba8ed4c79e3dd72090fdd7abfacf45d"
   license :cannot_represent
   head "https://github.com/sherpatch/subru.git", branch: "main"
 
